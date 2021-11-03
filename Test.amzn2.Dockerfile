@@ -11,6 +11,7 @@ RUN groupadd -g 1000 app \
 RUN touch /var/run/nginx.pid && \
     mkdir /sock && \
     chown -R app:app /etc/nginx /var/run/nginx.pid /sock /var/lib/nginx && \
+    pwd && \
     mkdir -p /var/www/magento && \
     chown -R app:app /var/www/magento
 
